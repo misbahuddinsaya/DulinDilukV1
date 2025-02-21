@@ -993,7 +993,7 @@ section,
 }
 
 .featured-services .service-item h4 {
-  justify-items: center;
+  text-align: center;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 20px;
@@ -1003,7 +1003,6 @@ section,
   color: #ffffff;
   transition: ease-in-out 0.3s;
 }
-
 
 
 .featured-services .service-item:hover {
