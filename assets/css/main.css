@@ -30,11 +30,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #5f687b;  /* The default color of the main navmenu links */
-  --nav-hover-color: #10bc69; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #ff9b37; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #5f687b; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #10bc69; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #ff9b37; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -53,10 +53,10 @@
 }
 
 .accent-background {
-  --background-color: #10bc69;
+  --background-color: #ff9b37;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #14eb83;
+  --surface-color: #ff9b37;
   --contrast-color: #ffffff;
 }
 
@@ -912,9 +912,9 @@ section,
   z-index: 2;
 }
 .section-title-about h3 {
-  
+  text-transform: uppercase;
   color: #ff9b37;
-  font-size: 22px;
+  font-size: 44px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 0;
@@ -936,7 +936,7 @@ section,
 }
 
 .section-title-about p {
-  font-size: 100px;
+  text-transform: uppercase;
   margin-bottom: 0;
   position: relative;
   z-index: 2;
@@ -1045,7 +1045,7 @@ section,
   position: relative;
   background-size: cover;
   background-position: center;
-  border-radius: 2%;
+  border-radius: 20px;
   justify-items: center;
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
@@ -1059,8 +1059,8 @@ section,
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Ubah opacity sesuai keinginan */
-  border-radius: 2%;
+  background: rgba(0, 0, 0, 0.7); /* Ubah opacity sesuai keinginan */
+  border-radius: 20px;
   z-index: 1;
   mix-blend-mode: multiply;
 }
@@ -1175,27 +1175,28 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .testimonial-item .service-item {
+  position: relative;
   background-size: cover;
   background-position: center;
-  background-color: var(--surface-color);
   text-align: center;
   border-radius: 10px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   padding: 10px 20px;
   transition: border ease-in-out 0.3s;
+  z-index: 1;
   height: 100%;
+  color: white;
 }
 
-.testimonial-item .service-item ::after{
+.testimonial-item .service-item ::before{
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Ubah opacity sesuai keinginan */
   border-radius: 2%;
-  z-index: 1;
+  z-index: 2;
   mix-blend-mode: multiply;
 }
 
@@ -1218,14 +1219,18 @@ section,
 }
 
 .testimonial-item .service-item h3 {
-  text-align: center;
+  text-align: left;
   font-weight: 700;
   font-size: 22px;
   transition: 0.3s;
+  z-index: 1;
+  color: white;
 }
 
 .testimonial-item .service-item p {
-  line-height: 24px;
+  position: relative;
+  z-index: 1;
+  color: white;
   font-size: 14px;
   margin-bottom: 0;
 }
@@ -1234,8 +1239,8 @@ section,
   border-color: var(--accent-color);
 }
 
- .service-item:hover h3 {
-  color: var(--accent-color);
+.testimonial-item .service-item:hover h3 {
+  color: white;
 }
 
 /*--------------------------------------------------------------
