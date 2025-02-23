@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #5f687b; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #10bc69; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #ff9b37; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -838,7 +838,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 20px 0px;
   scroll-margin-top: 100px;
   overflow: clip;
 }
@@ -864,8 +864,8 @@ section,
 
 .section-title h2 {
   
-  color: #e6ad02;
-  font-size: 32px;
+  color: #ff9b37;
+  font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -893,6 +893,55 @@ section,
   z-index: 2;
 }
 
+/* About Section Title */
+.section-title-about {
+  text-align: center;
+  padding: 30px 0px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.section-title-about h2 {
+  
+  color: #ff9b37;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+.section-title-about h3 {
+  
+  color: #ff9b37;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.section-title-about span {
+  position: absolute;
+  top: 4px;
+  color: color-mix(in srgb, var(--heading-color), transparent 95%);
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.section-title-about p {
+  font-size: 100px;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
 @media (max-width: 575px) {
   .section-title h2 {
     font-size: 28px;
@@ -902,6 +951,23 @@ section,
   .section-title span {
     font-size: 38px;
   }
+
+  /* Section About */
+  .section-title-about {
+  
+    text-align: center;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .section-title-about h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+  }
+  .section-title-about span {
+    font-size: 38px;
+  }
+
 }
 
 /*--------------------------------------------------------------
@@ -950,7 +1016,7 @@ section,
 --------------------------------------------------------------*/
 .services-text {
   text-align: center; /* Pusatkan teks */
-  margin: 20px auto; /* Beri jarak atas dan bawah */
+  margin: 20px 20px; /* Beri jarak atas dan bawah */
   max-width: 600px; /* Batasi lebar agar tidak terlalu panjang */
 }
 
@@ -970,16 +1036,33 @@ section,
   color: #060606; /* Warna abu-abu agar lebih lembut */
 }
 .featured-services {
-  background-image: url('asset/img/layanan/flayer_layanan1.jpg');
-  padding-top: 0;
+
+  padding: 10px 0px 20px 0px;
 }
 
 .featured-services .service-item {
+  
+  position: relative;
+  background-size: cover;
+  background-position: center;
   border-radius: 2%;
   justify-items: center;
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
   height: 100%;
+  color: white;
+}
+.featured-services .service-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Ubah opacity sesuai keinginan */
+  border-radius: 2%;
+  z-index: 1;
+  mix-blend-mode: multiply;
 }
 
 .featured-services .service-item .icon {
@@ -993,13 +1076,20 @@ section,
 }
 
 .featured-services .service-item h4 {
+  color: white !important;
+  z-index: 2;
   text-align: center;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
 }
 
 .featured-services .service-item h4 a {
+  position: relative;
+  z-index: 2;
+  color: white !important;
   color: #ffffff;
   transition: ease-in-out 0.3s;
 }
@@ -1010,12 +1100,17 @@ section,
 }
 
 .featured-services .service-item:hover h4 a {
+  color: white !important;
+  z-index: 2;
   color: #ffffff;
 }
 
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about{
+  padding-top: 5px;
+}
 .about .content h3 {
   font-size: 1.75rem;
   font-weight: 700;
@@ -1079,17 +1174,32 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-.services .service-item {
+.testimonial-item .service-item {
+  background-size: cover;
+  background-position: center;
   background-color: var(--surface-color);
   text-align: center;
+  border-radius: 10px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  padding: 80px 20px;
+  padding: 10px 20px;
   transition: border ease-in-out 0.3s;
   height: 100%;
 }
 
-.services .service-item .icon {
-  margin: 0 auto;
+.testimonial-item .service-item ::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Ubah opacity sesuai keinginan */
+  border-radius: 2%;
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+
+.testimonial-item .service-item .icon {
   width: 64px;
   height: 64px;
   background: var(--accent-color);
@@ -1101,30 +1211,30 @@ section,
   transition: 0.3s;
 }
 
-.services .service-item .icon i {
+.testimonial-item .service-item .icon i {
   color: var(--contrast-color);
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
 
-.services .service-item h3 {
+.testimonial-item .service-item h3 {
+  text-align: center;
   font-weight: 700;
-  margin: 10px 0 15px 0;
   font-size: 22px;
   transition: 0.3s;
 }
 
-.services .service-item p {
+.testimonial-item .service-item p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.services .service-item:hover {
+ .service-item:hover {
   border-color: var(--accent-color);
 }
 
-.services .service-item:hover h3 {
+ .service-item:hover h3 {
   color: var(--accent-color);
 }
 
