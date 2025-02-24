@@ -1111,7 +1111,7 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about{
-  padding-top: 5px;
+  padding-top: px;
 }
 .about .content h3 {
   font-size: 1.75rem;
@@ -1178,6 +1178,9 @@ section,
 --------------------------------------------------------------*/
 
 .testimonial-item .service-item {
+  max-width: 400px;
+  align-items: center;
+  justify-content: start;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -1187,7 +1190,7 @@ section,
   padding: 20px;
   transition: border ease-in-out 0.3s;
   z-index: 1;
-  height: 100%;
+  height: 10%;
   color: white;
   display: flex;
   align-items: center;
@@ -1206,6 +1209,7 @@ section,
 }
 
 .testimonial-item .service-item .content {
+  align-items: center;
   position: relative;
   z-index: 2;
   display: flex;
@@ -1222,13 +1226,14 @@ section,
 .testimonial-item .service-item h3 {
   font-weight: 700;
   font-size: 22px;
-  margin-bottom: 5px;
   color: white;
 }
 
 .testimonial-item .service-item p {
+  
+  margin-top: 100px;
+  justify-content: start;
   font-size: 14px;
-  margin-bottom: 0;
   color: white;
 }
 
@@ -1361,9 +1366,11 @@ section,
 }
 
 .testimonials .testimonial-item h3 {
+  
+  padding: 20px 20px 0 20px;
+  margin: 55px 15px 0 15px;
   font-size: 18px;
   font-weight: bold;
-  margin: 10px 0 5px 45px;
 }
 
 .testimonials .testimonial-item h4 {
@@ -1394,6 +1401,7 @@ section,
 }
 
 .testimonials .testimonial-item p {
+  
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
@@ -1409,7 +1417,7 @@ section,
 }
 
 .testimonials .swiper-pagination {
-  margin-top: 0px;
+  margin-top: 10px;
   position: relative;
 }
 
