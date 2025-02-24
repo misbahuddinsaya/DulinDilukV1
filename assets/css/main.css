@@ -91,7 +91,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
+  color: white;
   font-family: var(--heading-font);
 }
 
@@ -564,14 +564,15 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: white;
+  background-color: #ff9b37;
   font-size: 14px;
+  padding: 40px 0px;
   position: relative;
 }
 
 .footer .footer-newsletter {
-  background-color: color-mix(in srgb, var(--default-color), transparent 97%);
+  background-color: #ff9b37;
   padding: 50px 0;
 }
 
@@ -635,16 +636,16 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  border: 2px solid white;
   font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: white;
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: white;
+  border-color: white;
 }
 
 .footer h4 {
@@ -688,11 +689,11 @@ h6 {
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--accent-color);
+  color: white;
 }
 
 .footer .footer-about a {
-  color: var(--heading-color);
+  color: white;
   font-size: 24px;
   font-weight: 600;
   font-family: var(--heading-font);
@@ -704,7 +705,6 @@ h6 {
 
 .footer .copyright {
   padding: 25px 0;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .copyright p {
@@ -714,6 +714,9 @@ h6 {
 .footer .credits {
   margin-top: 6px;
   font-size: 13px;
+}
+.social-icon {
+  color: white !important;
 }
 
 /*--------------------------------------------------------------
@@ -904,7 +907,7 @@ section,
 .section-title-about h2 {
   
   color: #ff9b37;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 0;
@@ -914,7 +917,7 @@ section,
 .section-title-about h3 {
   text-transform: uppercase;
   color: #ff9b37;
-  font-size: 44px;
+  font-size: 33px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 0;
@@ -930,13 +933,12 @@ section,
   right: 0;
   z-index: 1;
   font-weight: 700;
-  font-size: 52px;
+  font-size: 33px;
   text-transform: uppercase;
   line-height: 1;
 }
 
 .section-title-about p {
-  text-transform: uppercase;
   margin-bottom: 0;
   position: relative;
   z-index: 2;
@@ -1174,6 +1176,7 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+
 .testimonial-item .service-item {
   position: relative;
   background-size: cover;
@@ -1351,7 +1354,7 @@ section,
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  min-height: 320px;
+  min-height: 200px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1412,7 +1415,7 @@ section,
 }
 
 .testimonials .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 0px;
   position: relative;
 }
 
