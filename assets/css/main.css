@@ -1030,7 +1030,7 @@ section,
 .section-title h2 {
   font-family: var(--default-font);
   color: #ff9b37;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -1071,7 +1071,7 @@ section,
   font-family: var(--default-font);
   text-transform: uppercase;
   color: #ff9b37;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 0;
@@ -1103,7 +1103,7 @@ section,
 @media (max-width: 575px) {
   .section-title h2 {
     font-family: var(--default-font);
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 15px;
   }
 
@@ -1120,7 +1120,7 @@ section,
     position: relative;
   }
   .section-title-about h2 {
-    font-size: 38px;
+    font-size: 18px;
     margin-bottom: 15px;
   }
   .section-title-about span {
