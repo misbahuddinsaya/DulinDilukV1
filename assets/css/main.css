@@ -642,7 +642,13 @@ h6 {
   margin-right: 10px;
   transition: 0.3s;
 }
-
+.footer .ketentuan a {
+  
+  align-items: center;
+  justify-content: center;
+  
+  color: white;
+}
 .footer .social-links a:hover {
   color: white;
   border-color: white;
@@ -1016,96 +1022,57 @@ section,
 /*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
-.services-text {
-  text-align: center; /* Pusatkan teks */
-  margin: 20px 20px; /* Beri jarak atas dan bawah */
-  max-width: 600px; /* Batasi lebar agar tidak terlalu panjang */
+.service-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
-
-
-.services-text h4 {
-  font-family: 'Montserrat', sans-serif;;
-  font-size: 18px; /* Ukuran judul */
-  font-weight: bold;
-  text-transform: uppercase;
-  animation: scaleText 1.5s infinite alternate ease-in-out;
-  color: #e6ad02;
-}
-
-.services-text p {
-  font-family: sans-serif;
-  font-size: 12px; /* Ukuran teks paragraf */
-  color: #060606; /* Warna abu-abu agar lebih lembut */
-}
-.featured-services {
-
-  padding: 10px 0px 20px 0px;
-}
-
-.featured-services .service-item {
-  
+.service-item {
   position: relative;
   background-size: cover;
   background-position: center;
   border-radius: 20px;
-  justify-items: center;
   padding: 50px 30px;
-  transition: all ease-in-out 0.4s;
-  height: 100%;
+  height: 150px; /* Sesuaikan tinggi */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   color: white;
+  overflow: hidden;
 }
-.featured-services .service-item::after {
+
+/* Overlay gelap */
+.service-item::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Ubah opacity sesuai keinginan */
+  background: rgba(0, 0, 0, 0.7); /* Opacity lebih ringan agar gambar tetap terlihat */
   border-radius: 20px;
-  z-index: 1;
-  mix-blend-mode: multiply;
+  z-index: 1; /* Pastikan overlay di bawah teks */
 }
-
-.featured-services .service-item .icon {
-  margin-bottom: 10px;
-}
-
-.featured-services .service-item .icon i {
-  color: var(--accent-color);
-  font-size: 36px;
-  transition: 0.3s;
-}
-
-.featured-services .service-item h4 {
-  color: white !important;
-  z-index: 2;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 20px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  color: #ffffff;
-}
-
-.featured-services .service-item h4 a {
+.service-item h4 {
   position: relative;
-  z-index: 2;
-  color: white !important;
-  color: #ffffff;
+  z-index: 2; /* Pastikan teks berada di atas overlay */
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 0;
   transition: ease-in-out 0.3s;
 }
 
-
-.featured-services .service-item:hover {
+/* Efek hover */
+.service-item:hover {
   transform: translateY(-10px);
 }
 
-.featured-services .service-item:hover h4 a {
-  color: white !important;
-  z-index: 2;
-  color: #ffffff;
-}
+/* tes */
+
 
 /*--------------------------------------------------------------
 # About Section
