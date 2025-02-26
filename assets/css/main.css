@@ -831,6 +831,7 @@ h6 {
 }
 
 .footer .copyright p {
+  color: white;
   margin-bottom: 0;
 }
 
@@ -840,6 +841,9 @@ h6 {
 }
 .social-icon {
   color: white !important;
+}
+.copyright-footer{
+  margin-top: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -1094,8 +1098,8 @@ section,
 }
 
 .section-title-about p {
+  margin: 0 10px 0 10px;
   font-family: var(--default-font);
-  margin-bottom: 50px;
   position: relative;
   z-index: 2;
 }
@@ -1112,14 +1116,8 @@ section,
   }
 
   /* Section About */
-  .section-title-about {
-  
-    text-align: center;
-    padding: 10px 10px;
-    margin-bottom: 0;
-    position: relative;
-  }
   .section-title-about h2 {
+    font-family: var(--default-font);
     font-size: 18px;
     margin-bottom: 15px;
   }
@@ -1850,6 +1848,7 @@ section,
 # Service Details Section
 --------------------------------------------------------------*/
 .service-card {
+  
   border-radius: 10px;
   overflow: hidden;
   transition: 0.3s ease-in-out;
