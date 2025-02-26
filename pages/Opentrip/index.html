@@ -36,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="service-details-page">
+<body class="service-details-page no-navbar">
 
     <header id="header" class="header d-flex align-items-center sticky-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -49,8 +49,8 @@
     
           <nav id="navmenu" class="navmenu">
             <ul>
-              <li><a href="#hero" class="active">Beranda</a></li>
-              <li><a href="#featured-services">Open Trip</a></li>
+              <li><a href="../../index.html" >Beranda</a></li>
+              <li><a href="#featured-services" class="active">Open Trip</a></li>
               <li><a href="#portfolio">Private Trip Package</a></li>
               <li><a href="#team">Rent Car</a></li>
               <li><a href="#team">Travel Post</a></li>
@@ -58,7 +58,12 @@
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </nav>
-            
+          <form class="search-form-nav d-flex align-items-center" action="search.html" method="GET">
+            <input type="text" name="q" placeholder="Cari..." class="form-control">
+            <button type="submit" class="btn btn-light">
+                <i class="bi bi-search"></i>
+            </button>
+        </form>
     
         </div>
       </header>
@@ -71,14 +76,19 @@
       <div class="container d-lg-flex justify-content-between align-items-center">
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="../../index.html">Beranda</a></li>
-            <li class="current">Open Trip</li>
+            <li><a href="../../index.html"><i class="bi bi-arrow-left"></i></a></li>
           </ol>
+          <ol class="mt-5">
+              <li><h1>Open Trip</h1></li>
+            </ol>
+            <ol>
+                <li><p>Temukan destinasi terbaik anda.</p></li>
+              </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
     <section id="search" class="search">
-        <form class="search-form d-flex align-items-center" action="search.html" method="GET">
+        <form class="search-form-nav d-flex align-items-center" action="search.html" method="GET">
             <input type="text" name="q" placeholder="Cari dstinasi anda..." class="form-control">
             <button type="submit" class="btn btn-light">
                 <i class="bi bi-search"></i>
@@ -180,7 +190,7 @@
 </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>

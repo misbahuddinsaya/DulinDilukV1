@@ -291,6 +291,9 @@ h6 {
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
+.no-navbar #header {
+  display: none !important;
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -411,16 +414,15 @@ h6 {
     visibility: visible;
   }
   .search-form {
-    margin-left: 115px;
+    margin-left: 10px;
     display: flex;
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
     background-color: white; /* Sesuaikan ukuran */
-    margin-right: 110px; /* Beri jarak dengan burger menu */
-  }
-  
+    margin-right: 10px; /* Beri jarak dengan burger menu */
+  }  
   .search-form input {
     border: none;
     padding: 8px 10px;
@@ -433,6 +435,40 @@ h6 {
     background: none;
     padding: 8px;
     cursor: pointer;
+  }
+  /* NAV */
+  .search-form-nav {
+    margin-left: 110px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white; /* Sesuaikan ukuran */
+    margin-right: 110px; /* Beri jarak dengan burger menu */
+  }
+  
+  .search-form-nav input {
+    border: none;
+    padding: 8px 10px;
+    width: 100%;
+    outline: none;
+  }
+  
+  .search-form-nav button {
+    border: none;
+    background: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .search-form-nav input::placeholder {
+    color: #ff9b37; /* Ganti dengan warna yang diinginkan */
+    opacity: 1; /* Pastikan teks placeholder tidak transparan */
+  }
+  
+  /* Jika ingin warna placeholder berubah saat input aktif */
+  .search-form-nav input:focus::placeholder {
+    color: #ff9b37; /* Warna saat input dalam keadaan fokus */
   }
   
 }
@@ -836,7 +872,6 @@ h6 {
 }
 
 .scroll-top.active {
-  visibility: visible;
   opacity: 1;
   bottom: 15px;
 }
@@ -854,14 +889,18 @@ h6 {
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
+  font-family: var(--default-font);
   background: url('../../assets/img/layanan/layanan3.png') no-repeat center center;
   background-size: cover;
-  padding: 20px 10px;
+  padding: 10px 10px;
   text-align: center;
   position: relative;
-  color: white;
+  background-color: white;
+  border-radius: 0 0 12px 12px;
 }
 .page-title::before {
+  font-family: var(--default-font);
+  border-radius: 0 0 12px 12px;
   content: "";
   position: absolute;
   top: 0;
@@ -869,24 +908,34 @@ h6 {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Transparansi gelap */
-  border-radius: 8px;
+  
 }
 .page-title .container {
+  font-family: var(--default-font);
   position: relative;
   z-index: 2;
 }
 
 .page-title h1 {
+  font-family: var(--default-font);
   color: white;
   font-size: 24px;
   font-weight: 700;
 }
 
 .page-title a {
+  font-family: var(--default-font);
   color: white;
 }
 
+.page-title i {
+  font-family: var(--default-font);
+  color: white;
+  font-size: 34px;
+}
+
 .page-title .breadcrumbs ol {
+    font-family: var(--default-font);
     list-style: none;
     padding: 0;
     margin: 0;
@@ -909,6 +958,7 @@ h6 {
 
 }
 .breadcrumbs .current {
+  font-family: var(--default-font);
   color: white;
   font-weight: 500;
 }
@@ -936,7 +986,7 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  
+  font-family: var(--default-font);
   text-align: center;
   padding: 30px 0;
   margin-bottom: 30px;
@@ -944,7 +994,7 @@ section,
 }
 
 .section-title h2 {
-  
+  font-family: var(--default-font);
   color: #ff9b37;
   font-size: 40px;
   font-weight: 700;
@@ -956,6 +1006,7 @@ section,
 }
 
 .section-title span {
+  font-family: var(--default-font);
   position: absolute;
   top: 4px;
   color: color-mix(in srgb, var(--heading-color), transparent 95%);
@@ -969,13 +1020,14 @@ section,
 }
 
 .section-title p {
-  margin-bottom: 0;
+  margin: 0 10px 0 10px;
   position: relative;
   z-index: 2;
 }
 
 /* About Section Title */
 .section-title-about {
+  font-family: var(--default-font);
   text-align: center;
   padding: 30px 0px;
   margin-bottom: 10px;
@@ -983,7 +1035,7 @@ section,
 }
 
 .section-title-about h2 {
-  
+  font-family: var(--default-font);
   color: #ff9b37;
   font-size: 40px;
   font-weight: 700;
@@ -993,6 +1045,7 @@ section,
   z-index: 2;
 }
 .section-title-about h3 {
+  font-family: var(--default-font);
   text-transform: uppercase;
   color: #ff9b37;
   font-size: 33px;
@@ -1004,6 +1057,7 @@ section,
 }
 
 .section-title-about span {
+  font-family: var(--default-font);
   position: absolute;
   top: 4px;
   color: color-mix(in srgb, var(--heading-color), transparent 95%);
@@ -1017,6 +1071,7 @@ section,
 }
 
 .section-title-about p {
+  font-family: var(--default-font);
   margin-bottom: 50px;
   position: relative;
   z-index: 2;
@@ -1024,6 +1079,7 @@ section,
 
 @media (max-width: 575px) {
   .section-title h2 {
+    font-family: var(--default-font);
     font-size: 28px;
     margin-bottom: 15px;
   }
