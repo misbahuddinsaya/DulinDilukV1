@@ -1020,9 +1020,9 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
+  width: 100%;
   font-family: var(--default-font);
   text-align: center;
-  padding: 30px 0;
   margin-bottom: 30px;
   position: relative;
 }
@@ -1040,6 +1040,7 @@ section,
 }
 
 .section-title span {
+  width: 80%;
   font-family: var(--default-font);
   position: absolute;
   top: 4px;
@@ -1047,8 +1048,6 @@ section,
   left: 0;
   right: 0;
   z-index: 1;
-  font-weight: 700;
-  font-size: 52px;
   text-transform: uppercase;
   line-height: 1;
 }
