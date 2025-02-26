@@ -11,6 +11,8 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 :root {
   --default-font: "Montserrat", sans-serif;
   --heading-font: "Montserrat", sans-serif;
@@ -299,6 +301,16 @@ h6 {
     padding: 0;
   }
 
+  .search-form input::placeholder {
+    color: #ff9b37; /* Ganti dengan warna yang diinginkan */
+    opacity: 1; /* Pastikan teks placeholder tidak transparan */
+  }
+  
+  /* Jika ingin warna placeholder berubah saat input aktif */
+  .search-form input:focus::placeholder {
+    color: #ff9b37; /* Warna saat input dalam keadaan fokus */
+  }
+
   .navmenu ul {
     margin: 0;
     padding: 0;
@@ -398,31 +410,31 @@ h6 {
     left: -100%;
     visibility: visible;
   }
-}
-.search-form {
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  overflow: hidden;
-  background-color: white;
-  width: 210px; /* Sesuaikan ukuran */
-  margin-right: 5px; /* Beri jarak dengan burger menu */
-}
-
-.search-form input {
-  border: none;
-  padding: 8px 10px;
-  width: 100%;
-  outline: none;
-}
-
-.search-form button {
-  border: none;
-  background: none;
-  padding: 8px;
-  cursor: pointer;
+  .search-form {
+    margin-left: 115px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white; /* Sesuaikan ukuran */
+    margin-right: 110px; /* Beri jarak dengan burger menu */
+  }
+  
+  .search-form input {
+    border: none;
+    padding: 8px 10px;
+    width: 100%;
+    outline: none;
+  }
+  
+  .search-form button {
+    border: none;
+    background: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
 }
 
 
@@ -443,7 +455,42 @@ h6 {
   }
   .search-form {
     order: 1;
-}
+  }
+  .search-form {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white; /* Sesuaikan ukuran */
+    margin-right: 10px; /* Beri jarak dengan burger menu */
+  }
+  
+  .search-form input {
+    border: none;
+    padding: 8px 10px;
+    width: 100%;
+    outline: none;
+  }
+  .search-form button {
+    border: none;
+    background: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .search-form input::placeholder {
+    color: #ff9b37; /* Ganti dengan warna yang diinginkan */
+    font-style: italic; /* Opsional: membuat teks miring */
+    opacity: 1; /* Pastikan teks placeholder tidak transparan */
+  }
+  
+  /* Jika ingin warna placeholder berubah saat input aktif */
+  .search-form input:focus::placeholder {
+    color: #ff9b37; /* Warna saat input dalam keadaan fokus */
+  }
+    
+
 
 .mobile-nav-toggle {
     order: 2;
@@ -807,29 +854,50 @@ h6 {
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
-  --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 25px 0;
+  background: url('../../assets/img/layanan/layanan3.png') no-repeat center center;
+  background-size: cover;
+  padding: 20px 10px;
+  text-align: center;
   position: relative;
+  color: white;
+}
+.page-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Transparansi gelap */
+  border-radius: 8px;
+}
+.page-title .container {
+  position: relative;
+  z-index: 2;
 }
 
 .page-title h1 {
+  color: white;
   font-size: 24px;
   font-weight: 700;
 }
 
+.page-title a {
+  color: white;
+}
+
 .page-title .breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-  font-weight: 400;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
 }
 
 .page-title .breadcrumbs ol li+li {
+  display: inline;
   padding-left: 10px;
 }
 
@@ -837,9 +905,13 @@ h6 {
   content: "/";
   display: inline-block;
   padding-right: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
+  color: white;
 
+}
+.breadcrumbs .current {
+  color: white;
+  font-weight: 500;
+}
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
@@ -1697,6 +1769,99 @@ section,
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
+.service-card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgb(255, 255, 255);
+  position: relative;
+  
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.badge-favorite {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.card-title {
+  font-family: var(--default-font);
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-text .icon {
+  font-family: var(--default-font);
+  font-size: 16px;
+}
+
+.price {
+  font-family: var(--default-font);
+  font-size: 14px;
+  color: #777;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.price span {
+  font-family: var(--default-font);
+  color: #ccc;
+  font-size: 18px;
+}
+
+.detail-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--accent-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.detail-link:hover {
+  
+  text-decoration: underline;
+}
+
+/* Responsif */
+@media (max-width: 991px) {
+  .col-lg-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-lg-4, .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+/* Tes */
 .service-details .service-box {
   background-color: var(--surface-color);
   padding: 20px;
