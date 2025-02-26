@@ -6,8 +6,13 @@
 * License: https://bootstrapmade.com/license/
 */
 
+
 (function() {
   "use strict";
+
+  if (!document.body || document.body.innerHTML.trim() === "") {
+    window.location.href = "pages/404/index.html"; // Redirect ke halaman 404
+  }
 
   /**
    * Apply .scrolled class to the body as the page is scrolled down

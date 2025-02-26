@@ -1063,7 +1063,7 @@ section,
 .section-title-about {
   font-family: var(--default-font);
   text-align: center;
-  padding: 30px 0px;
+  padding: 10px 0;
   margin-bottom: 10px;
   position: relative;
 }
@@ -1109,6 +1109,7 @@ section,
   margin-bottom: 50px;
   position: relative;
   z-index: 2;
+  font-weight: bold;
 }
 
 @media (max-width: 575px) {
@@ -1146,6 +1147,7 @@ section,
 .hero {
   width: 100%;
   min-height: 10vh;
+  min-width: none;
   position: relative;
   padding: 10px 0px 20px 0px;
   display: flex;
@@ -2089,3 +2091,70 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/* 404 Page */
+.section-image-eror {
+  margin: 0 0 0 0;
+  font-family: var(--default-font);
+  text-align: center;
+  color: #333;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Kontainer utama */
+.container-image-eror {
+  max-width: 100vh;
+  width: 100vh;
+}
+
+/* Logo */
+.container-image-eror .logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+/* Gambar error */
+.container-image-eror .error-image {
+  max-width: 30%;
+  height: auto;
+  margin-bottom: 15px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Judul */
+.container-image-eror h1 {
+  font-family: var(--default-font);
+  color: var(--accent-color);
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Paragraf */
+.container-image-eror p {
+  font-family: var(--default-font);
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.copyright {
+  font-family: var(--default-font);
+  font-size: 14px;
+  color: var(--default-color);
+  margin-top: 40px;
+}
+
