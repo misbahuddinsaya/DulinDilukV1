@@ -525,7 +525,41 @@ h6 {
   .search-form input:focus::placeholder {
     color: #ff9b37; /* Warna saat input dalam keadaan fokus */
   }
-    
+  
+  /* NAV */
+  .search-form-nav {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white; /* Sesuaikan ukuran */
+    margin-right: 10px; /* Beri jarak dengan burger menu */
+  }
+  
+  .search-form-nav input {
+    border: none;
+    padding: 8px 10px;
+    width: 100%;
+    outline: none;
+  }
+  .search-form-nav button {
+    border: none;
+    background: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .search-form-nav input::placeholder {
+    color: #ff9b37; /* Ganti dengan warna yang diinginkan */
+    font-style: italic; /* Opsional: membuat teks miring */
+    opacity: 1; /* Pastikan teks placeholder tidak transparan */
+  }
+  
+  /* Jika ingin warna placeholder berubah saat input aktif */
+  .search-form-nav input:focus::placeholder {
+    color: #ff9b37; /* Warna saat input dalam keadaan fokus */
+  }
 
 
 .mobile-nav-toggle {
