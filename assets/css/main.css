@@ -1053,6 +1053,7 @@ section,
 }
 
 .section-title p {
+  font-weight: bold;
   margin: 0 10px 0 10px;
   position: relative;
   z-index: 2;
