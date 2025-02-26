@@ -1053,7 +1053,6 @@ section,
 }
 
 .section-title p {
-  font-weight: bold;
   margin: 0 10px 0 10px;
   position: relative;
   z-index: 2;
@@ -1070,19 +1069,9 @@ section,
 
 .section-title-about h2 {
   font-family: var(--default-font);
-  color: #ff9b37;
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 0;
-  position: relative;
-  z-index: 2;
-}
-.section-title-about h3 {
-  font-family: var(--default-font);
   text-transform: uppercase;
   color: #ff9b37;
-  font-size: 33px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 0;
@@ -1109,13 +1098,12 @@ section,
   margin-bottom: 50px;
   position: relative;
   z-index: 2;
-  font-weight: bold;
 }
 
 @media (max-width: 575px) {
   .section-title h2 {
     font-family: var(--default-font);
-    font-size: 28px;
+    font-size: 22px;
     margin-bottom: 15px;
   }
 
