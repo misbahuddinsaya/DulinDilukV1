@@ -11,12 +11,9 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
 :root {
-  --default-font: "Montserrat", sans-serif;
-  --heading-font: "Montserrat", sans-serif;
-  --nav-font: "Montserrat", sans-serif;
+  --default-font: "Nunito", sans-serif;
+  --heading-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -73,7 +70,7 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: var(--default-font);
+  font-family: "Montserrat", sans-serif; ;
 }
 
 a {
@@ -936,7 +933,7 @@ h6 {
   text-align: center;
   position: relative;
   background-color: white;
-  border-radius: 0 0 12px 12px;
+  border-radius: 0 0 20px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -950,7 +947,7 @@ h6 {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Overlay transparan */
-  border-radius: 0 0 12px 12px;
+  border-radius: 0 0 20px 20px;
   z-index: 1;
 }
 
@@ -1858,25 +1855,26 @@ section,
 # Service Details Section
 --------------------------------------------------------------*/
 .service-card {
-  
   border-radius: 10px;
   overflow: hidden;
   transition: 0.3s ease-in-out;
   position: relative;
-  /* border: 0.5px solid rgb(255, 234, 127); */
 
   
 }
 
 .service-card img {
+  align-items: center;
   width: 100%;
-  height: 200px;
+  height: 180px;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 
 .card-body {
-  padding: 15px;
+  padding: 10px;
 }
+
 
 .badge-favorite {
   position: absolute;
@@ -1891,31 +1889,59 @@ section,
 }
 
 .card-title {
-  font-family: var(--default-font);
-  font-size: 16px;
+  font-family: var(--heading-font);
+  font-size: 18px;
   font-weight: bold;
   color: #333;
+  margin-bottom: 40px;
 }
 
 .card-text {
+  font-family: var(--heading-font);
   font-size: 14px;
   color: #666;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
+  font-weight: 500;
 }
 
 .card-text .icon {
   color: var(--accent-color);
   font-family: var(--default-font);
-  font-size: 16px;
+  font-size: 10px;
+}
+
+.price-container {
+  margin-top: 20px;
+  display: flex; /* Aktifkan Flexbox */
+  justify-content: space-between; /* Pisahkan elemen kiri dan kanan */
+}
+
+.price-wrap {
+  display: flex; /* Buat harga dalam 1 baris */
+  align-items: baseline; /* Sejajarkan tulisan besar & kecil */
+  gap: 1px; /* Jarak antar teks */
 }
 
 .price {
   font-family: var(--default-font);
-  font-size: 14px;
+  font-size: 12px;
   color: #777;
-  margin-bottom: auto;
+}
+
+.price-tag {
+  font-family: var(--default-font);
+  font-size: 18px;
+  font-weight: bold;
+  color: #f57c00; /* Warna orange */
+}
+
+.detail-link {
+  text-decoration: none;
+  font-family: var(--default-font);
+  font-weight: 500;
+  color: var(--accent-color);
 }
 
 .price span {
@@ -1924,19 +1950,9 @@ section,
   font-size: 18px;
 }
 
-.detail-link {
-  display: inline-block;
-  margin-left: auto;
-  margin-top: 10px;
-  color: var(--accent-color);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.detail-link:hover {
-  
-  text-decoration: underline;
-}
+  .detail-link:hover {
+    text-decoration: underline;
+  }
 
 /* Responsif */
 @media (max-width: 991px) {
