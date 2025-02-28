@@ -212,3 +212,18 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+document.addEventListener("DOMContentLoaded", function () {
+  const buttonGroup = document.querySelector(".custom-button-group");
+  const footer = document.querySelector("footer"); // Pastikan elemen footer ada
+
+  function checkFooterPosition() {
+      const footerRect = footer.getBoundingClientRect();
+      if (footerRect.top < window.innerHeight) {
+          buttonGroup.classList.add("move-up"); // Naik saat footer terlihat
+      } else {
+          buttonGroup.classList.remove("move-up"); // Tetap stay jika belum sampai footer
+      }
+  }
+
+  window.addEventListener("scroll", checkFooterPosition);
+});

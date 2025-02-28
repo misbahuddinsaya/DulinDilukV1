@@ -4,18 +4,19 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Dulin Diluk - Open Trip</title>
+  <title>Dulin Diluk - Travel Anak Muda</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="./assets/img/favicon.png" rel="icon">
-  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../../assets/img/favicon.png" rel="icon">
+  <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -36,125 +37,124 @@
   ======================================================== -->
 </head>
 
-<body class="service-details-page no-navbar">
+<body class="index-page no-navbar">
 
-    <header id="header" class="header d-flex align-items-center sticky-top">
-        <div class="container-fluid container-xl position-relative d-flex align-items-center">
-    
-          <a href="index.html" class="logo d-flex align-items-center me-auto">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <img src="../../assets/img/LogoDulinDiluk.png" alt="">
-            <!-- <h1 class="sitename">eNno</h1> -->
-          </a>
-    
-          <nav id="navmenu" class="navmenu">
-            <ul>
-              <li><a href="../../index.html" >Beranda</a></li>
-              <li><a href="#featured-services" class="active">Open Trip</a></li>
-              <li><a href="#portfolio">Private Trip Package</a></li>
-              <li><a href="#team">Rent Car</a></li>
-              <li><a href="#team">Travel Post</a></li>
-              <li><a href="#team">About</a></li>
-            </ul>
-            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-          </nav>
-          <form class="search-form-nav d-flex align-items-center" action="search.html" method="GET">
-            <input type="text" name="q" placeholder="Cari..." class="form-control">
-            <button type="submit" class="btn btn-light">
-                <i class="bi bi-search"></i>
-            </button>
-        </form>
-    
-        </div>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="../../assets/img/LogoDulinDiluk.png" alt="">
+        <!-- <h1 class="sitename">eNno</h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Beranda</a></li>
+          <li><a href="pages/Opentrip/index.html">Open Trip</a></li>
+          <li><a href="#portfolio">Private Trip Package</a></li>
+          <li><a href="#team">Rent Car</a></li>
+          <li><a href="#team">Travel Post</a></li>
+          <li><a href="#team">About</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <form class="search-form d-flex align-items-center" action="search.html" method="GET">
+        <input type="text" name="q" placeholder="Cari..." class="form-control">
+        <button type="submit" class="btn btn-light">
+            <i class="bi bi-search"></i>
+        </button>
+    </form>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="custom-detail-package" class="custom-detail-package">
+      <header class="custom-header">
+          <button class="back-button"><i class="bi bi-arrow-left"></i></button>
+          <h2>Detail Package</h2>
       </header>
-
-  <main class="main" >
-
-    <!-- Page Title -->
-    
-    <div class="page-title" style="background-image: url(../../assets/img/layanan/layanan2.png);">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="../../index.html"><i class="bi bi-arrow-left"></i></a></li>
-          </ol>
-          <ol class="mt-5">
-              <li><h1>Open Trip</h1></li>
-            </ol>
-            <ol>
-                <li><p>Temukan destinasi terbaik anda.</p></li>
-              </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
-    <section id="search" class="search">
-        <form class="search-form-nav d-flex align-items-center" action="search.html" method="GET">
-            <input type="text" name="q" placeholder="Cari destinasi anda..." class="form-control">
-            <button type="submit" class="btn btn-light">
-                <i class="bi bi-search"></i>
-            </button>
-            </form>
-    </section>
-    <!-- Service Details Section -->
-    <section id="service-details" class="service-details section">
-        <div class="container">
-          <div class="row gy-4">
-      
-            <!-- Kartu Pertama -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <a href="detail-produk.html" class="card-link">
-                    <div class="card service-card">
-                        <img src="../../assets/img/layanan/layanan1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Favorite West Europe + Keukenhof Tulip Festival & Titisee</h5>
-                            <p class="card-text">
-                                <span class="icon">⏳</span> 13 Hari
-                                <span class="icon">✈️</span> QATAR AIRWAYS
-                            </p>
-                            <p class="price">Mulai dari <span>IDR 44.888.000</span></p>
-                            <span class="detail-link">Lihat Detail →</span>
-                        </div>
-                    </div>
-                </a>
+      <div class="custom-package-content">
+          <!-- Gambar & Info -->
+          <div class="custom-left">
+            <div class="custom-image-container">
+                <img src="../../assets/img/opentrip/Kawah Ijen.png" alt="Bunaken">
+                <span class="custom-label">Jelajah</span>
+                <button class="share-button"><i class="bi bi-share"></i></button>
+                <span class="photo-count">Semua Foto</span>
             </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <a href="../404/index.html" class="card-link">
-                    <div class="card service-card">
-                        <img src="../../assets/img/layanan/layanan2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Favorite West Europe + Keukenhof Tulip Festival & Titisee</h5>
-                            <p class="card-text">
-                                <span class="icon">⏳</span> 13 Hari
-                                <span class="icon">✈️</span> QATAR AIRWAYS
-                            </p>
-                            <p class="price">Mulai dari <span>IDR 44.888.000</span></p>
-                            <span class="detail-link">Lihat Detail →</span>
-                        </div>
-                    </div>
-                </a>
+        
+            <div class="custom-package-info">
+                <h3>Jelajah Bunaken Minahasa Likupang</h3>
+                <p class="location">Manado</p>
+                
+                <!-- Detail Paket -->
+                <div class="custom-details">
+                    <span><i class="bi bi-clock"></i> 4 Hari</span>
+                    <span><i class="bi bi-geo-alt"></i> 1 Negara 1 Kota</span>
+                </div>
+        
+                <!-- Fasilitas -->
+                <div class="fasilitas-details">
+                    <span><i class="bi bi-building"></i> Tidak ada Hotel</span>
+                    <span><i class="bi bi-suitcase"></i> 32 Keberangkatan</span>
+                </div>
+        
+                <!-- Destinasi -->
+                <div class="destinasi-details">
+                    <span><i class="bi bi-map"></i> Destinasi: Bunaken, Minahasa, Likupang</span>
+                </div>
             </div>
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <a href="../404/index.html" class="card-link">
-                    <div class="card service-card">
-                        <img src="../../assets/img/layanan/layanan3.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Favorite West Europe + Keukenhof Tulip Festival & Titisee</h5>
-                            <p class="card-text">
-                                <span class="icon">⏳</span> 13 Hari
-                                <span class="icon">✈️</span> QATAR AIRWAYS
-                            </p>
-                            <p class="price">Mulai dari <span>IDR 44.888.000</span></p>
-                            <span class="detail-link">Lihat Detail →</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-      
-          </div>
+            
         </div>
-      </section>
-      <!-- /Service Details Section -->
+        
+          
+  
+          <!-- Form Pilihan -->
+          <div class="custom-right">
+              <div class="custom-form-container">
+                <div class="timeline">
+                  <div class="timeline-item">
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                        <h4>Pilih Tanggal Keberangkatan</h4>
+                        <p class="availability">Tersedia 32 Keberangkatan</p>
+                        <div class="custom-date-picker">
+                            <input type="text" value="28 Feb 2025 - 03 Mar 2025">
+                            <i class="bi bi-calendar"></i>
+                        </div>
+                      </div>
+                  </div>
+              
+                  <div class="timeline-item">
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                          <h3>Judul Event 2</h3>
+                          <p>Deskripsi event kedua</p>
+                      </div>
+                  </div>
+              
+                  <div class="timeline-item">
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                          <h3>Judul Event 3</h3>
+                          <p>Deskripsi event ketiga</p>
+                      </div>
+                  </div>
+              </div>
+              
+              </div>
+          </div>
+      </div>
+  
+      <!-- Tombol Pilih Paket -->
+      <div class="custom-button-group">
+          <button class="select-package">Pilih Paket</button>
+          <a href="#" class="contact-link">Hubungi Kontak Kami</a>
+      </div>
+  </section>
+  <!-- /Service Details Section -->
 
   </main>
 
@@ -190,7 +190,7 @@
 </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-whatsapp"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
