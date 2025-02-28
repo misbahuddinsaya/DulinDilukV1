@@ -241,8 +241,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 100px;
-  margin-right: 10px;
+  max-height: 76px;
+  margin-right: 8px;
 }
 
 .header .logo h1 {
@@ -529,14 +529,13 @@ h6 {
     display: flex;
     align-items: center;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     background-color: white; /* Sesuaikan ukuran */
     margin-right: 10px; /* Beri jarak dengan burger menu */
   }
   
   .search-form-nav input {
-    
     border: none;
     padding: 8px 10px;
     width: 100%;
@@ -965,7 +964,7 @@ h6 {
 .page-title h1 {
   font-family: var(--heading-font);
   color: white;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 700;
 }
 
@@ -986,7 +985,7 @@ h6 {
     padding: 0;
     margin: 0;
     display: flex;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 600;
     color: white;
 }
@@ -1216,7 +1215,7 @@ section,
   font-family: var(--heading-font);
   position: relative;
   z-index: 2; /* Pastikan teks berada di atas overlay */
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
