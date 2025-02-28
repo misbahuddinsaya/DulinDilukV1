@@ -241,8 +241,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 76px;
-  margin-right: 8px;
+  max-height: 100px;
+  margin-right: 10px;
 }
 
 .header .logo h1 {
@@ -529,13 +529,14 @@ h6 {
     display: flex;
     align-items: center;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
     background-color: white; /* Sesuaikan ukuran */
     margin-right: 10px; /* Beri jarak dengan burger menu */
   }
   
   .search-form-nav input {
+    
     border: none;
     padding: 8px 10px;
     width: 100%;
@@ -962,9 +963,9 @@ h6 {
 }
 
 .page-title h1 {
-  font-family: var(--default-font);
+  font-family: var(--heading-font);
   color: white;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
 }
 
@@ -985,7 +986,7 @@ h6 {
     padding: 0;
     margin: 0;
     display: flex;
-    font-size: 16px;
+    font-size: 26px;
     font-weight: 600;
     color: white;
 }
@@ -1039,7 +1040,7 @@ section,
 }
 
 .section-title h2 {
-  font-family: var(--default-font);
+  font-family: var(--heading-font);
   color: #ff9b37;
   font-size: 30px;
   font-weight: 700;
@@ -1079,7 +1080,7 @@ section,
 }
 
 .section-title-about h2 {
-  font-family: var(--default-font);
+  font-family: var(--heading-font);
   text-transform: uppercase;
   color: #ff9b37;
   font-size: 30px;
@@ -1212,10 +1213,11 @@ section,
   z-index: 1; /* Pastikan overlay di bawah teks */
 }
 .service-item h4 {
+  font-family: var(--heading-font);
   position: relative;
   z-index: 2; /* Pastikan teks berada di atas overlay */
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 600;
   text-transform: uppercase;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   color: white;
